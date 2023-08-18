@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="937.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerForSignIn">
+    <children>
+        <Label layoutX="160.0" layoutY="201.0" prefHeight="106.0" prefWidth="137.0" text="Username">
+            <font>
+                <Font size="30.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="0.8380952380952381" endY="0.8142857142857143" startX="0.6809523809523809" startY="0.03333333333333333">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.9300000071525574" green="0.027899999171495438" blue="0.809502899646759" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+        <Label layoutX="160.0" layoutY="277.0" prefHeight="106.0" prefWidth="137.0" text="Password">
+            <font>
+                <Font size="30.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="0.8380952380952381" endY="0.8142857142857143" startX="0.6809523809523809" startY="0.03333333333333333">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.9300000071525574" green="0.027899999171495438" blue="0.809502899646759" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+        <Text layoutX="376.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Allumi Login" wrappingWidth="191.13671875">
+            <font>
+                <Font size="32.0" />
+            </font>
+            <fill>
+                <LinearGradient endX="0.30952380952380953" endY="0.32380952380952377" startX="0.31428571428571433" startY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.9599999785423279" blue="0.7070035934448242" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="1.0" green="1.0" blue="1.0" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Text>
+        <TextField fx:id="User_name" layoutX="376.0" layoutY="232.0" prefHeight="45.0" prefWidth="348.0" promptText="Username">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <PasswordField fx:id="Password" layoutX="376.0" layoutY="318.0" prefHeight="43.0" prefWidth="348.0" promptText="Password">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </PasswordField>
+        <Button fx:id="Clear_data" layoutX="205.0" layoutY="432.0" mnemonicParsing="false" onAction="#handleEventAction_Clear" prefHeight="45.0" prefWidth="118.0" text="Clear" textFill="RED">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="SignIn" layoutX="640.0" layoutY="429.0" mnemonicParsing="false" onAction="#handleEventAction_SignIN" prefHeight="45.0" prefWidth="111.0" text="Sign in" textFill="#2600ff">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="SignUp" layoutX="425.0" layoutY="432.0" mnemonicParsing="false" onAction="#handleEventAction_SignUP" prefHeight="45.0" prefWidth="118.0" text="Sign up" textFill="#2600ff">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
